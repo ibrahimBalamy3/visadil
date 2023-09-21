@@ -1,0 +1,15 @@
+.container h3 {
+    max-width: 650px;
+    color: var(--blue-color);
+}
+
+.services .card {
+    border-color: var(--blue-color);
+    transition: var(--primary-trans);
+    cursor: pointer;
+}
+
+.services .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 20px var(--gray-color);
+}

@@ -1,0 +1,46 @@
+.content {
+    background-color: var(--blue-color);
+}
+
+.content .primary-title {
+    background-color: var(--neutral-color);
+    color: var(--lightest-color);
+}
+
+.contact form .input, 
+.contact form textarea {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.contact form textarea {
+    min-height: 100px;
+}
+.contact form .input::placeholder,
+.contact form textarea::placeholder {
+    text-transform: capitalize;
+    color: var(--gray-color);
+}
+
+.contact form button {
+    width: fit-content;
+    font-size: 1rem;
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 62em) {
+    .contact form button {
+        width: 100%;
+    }
+}
+
+.contact form button:hover {
+    background-color: var(--blue-color);
+    color: var(--lightest-color);
+    border-color: var(--blue-color);
+}

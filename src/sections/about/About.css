@@ -1,0 +1,5 @@
+@media screen and (max-width: 62em) {
+    .col-lg-8 {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--blue-color);
+    overflow: hidden;
+}
+
+.footer .title {
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--neutral-color);
+}
+
+.footer .social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: var(--lightest-color);
+    border-radius: 50%;
+    color: var(--blue-color);
+    transition: var(--primary-trans);
+    font-size: 1.25rem;
+}
+
+.footer .social-link:hover {
+    color: var(--neutral-color);
+}
+
+.footer h3.logo {
+    width: fit-content;
+    color: var(--neutral-color);
+}

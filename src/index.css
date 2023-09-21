@@ -1,0 +1,127 @@
+/* css variables  */
+:root {
+  --primary-ff: 'Poppins', sans-serif;
+
+  --lightest-color: #FFFFFF;
+  --neutral-color: #FBAD15;
+  --blue-color: #0049AA;
+  --gray-color: #AAAAAA;
+
+  --overlay-color: #00000075;
+  
+  --fs-btn: 1.25rem;
+  --fs-nav: 1.125rem;
+
+  --primary-trans: .3s ease-in;
+
+  --primary-border-radius: 32px;
+
+}
+
+@media screen and (max-width: 80em) {
+  :root {
+    --fs-nav: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 62em) {
+  :root {
+    --fs-nav: 1rem;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  :root {
+    --fs-btn: 0.875rem;
+    --fs-nav: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  :root {
+    --fs-btn: 0.75rem;
+    --fs-nav: 0.75rem;
+  }
+}
+
+
+/* css reset code  */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+/* css global rules  */
+body {
+  font-family: var(--primary-ff);
+}
+
+.c-light {
+  color: var(--lightest-color);
+}
+
+.bg-light {
+  background-color: var(--lightest-color);
+}
+
+.c-yellow {
+  color: var(--neutral-color);
+}
+
+.bg-yellow {
+  background-color: var(--neutral-color);
+}
+
+.primary-btn {
+  background-color: var(--neutral-color);
+  font-size: var(--fs-btn);
+  font-weight:500;
+  color: var(--lightest-color);
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: var(--primary-trans);
+  border: 3px solid var(--neutral-color);
+}
+
+.primary-btn:hover {
+  background-color: transparent;
+  color: var(--neutral-color);
+}
+
+.primary-title {
+  width: fit-content;
+  padding: 10px 20px ;
+  color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: var(--primary-border-radius);
+  border-top-left-radius: 0;
+  text-transform: capitalize;
+}
+
+.primary-title.border-right {
+  border-top-left-radius: var(--primary-border-radius);
+  border-top-right-radius: 0;
+}
